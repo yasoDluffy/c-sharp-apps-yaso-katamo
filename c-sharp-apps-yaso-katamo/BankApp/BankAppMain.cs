@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace c_sharp_apps_yaso_katamo.BankApp
 {
-    internal class BankAppMain
+    public class BankAppMain
     {
-        public static void RunMainProces()
+        public static void MainEntry()
         {
-
+            Console.WriteLine("BankApp");
         }
     }
 }

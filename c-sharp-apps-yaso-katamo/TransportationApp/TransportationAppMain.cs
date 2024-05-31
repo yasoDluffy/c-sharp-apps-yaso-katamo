@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace c_sharp_apps_yaso_katamo.TransportationApp
 {
-    internal class TransportationAppMain
+    public class TransportationAppMain
     {
         public static void MainEntry()
         {

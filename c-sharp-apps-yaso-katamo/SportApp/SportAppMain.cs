@@ -8,5 +8,9 @@ namespace c_sharp_apps_yaso_katamo.SportApp
 {
     internal class SportAppMain
     {
+        public static void MainEntry()
+        {
+            Console.WriteLine("SportApp");
+        }
     }
 }
