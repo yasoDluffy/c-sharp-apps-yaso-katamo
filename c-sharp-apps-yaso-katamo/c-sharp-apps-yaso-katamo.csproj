@@ -53,6 +53,7 @@
     <Compile Include="shared\ProcessManager.cs" />
     <Compile Include="SportApp\SportAppMain.cs" />
     <Compile Include="Team-sport\Team.cs" />
+    <Compile Include="Test_Sport_App\TestSportApp.cs" />
     <Compile Include="TransportationApp\TransportationAppMain.cs" />
   </ItemGroup>
   <ItemGroup>

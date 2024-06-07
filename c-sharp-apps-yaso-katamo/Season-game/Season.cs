@@ -20,10 +20,22 @@ namespace c_sharp_apps_yaso_katamo.Season_game
         private bool active;
         public void DisplayTable()
         {
-            for(int i=0; i<numTeams; i++)
+            Console.WriteLine();
+            for (int i = 0; i < teams.Length; i++)
             {
-                Console.WriteLine(teams[i].GetName() + " " + teams[i].GetPoints());
+                Console.WriteLine($"{i+1} {teams[i].GetName()} {teams[i].GetPoints()}");
             }
+            Console.WriteLine();
+        }
+
+        public Season(int year, string typeSport, string typeLiga, Team[] teams)
+        {
+            this.year = year;
+            this.typeSport = typeSport;
+            this.typeLiga = typeLiga;
+            this.teams = teams;
+
+
         }
 
     }

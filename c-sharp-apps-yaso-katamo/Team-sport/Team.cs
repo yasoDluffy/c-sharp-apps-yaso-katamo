@@ -36,6 +36,12 @@ namespace c_sharp_apps_yaso_katamo.Team_sport
             this.goalAgainst = 0;
             this.goalDiffrential = 0;
         }
+        public Team(string name, string city)
+        {
+            this.name = name;
+            this.city = city;
+            
+        }
 
         public string GetName()
         {
