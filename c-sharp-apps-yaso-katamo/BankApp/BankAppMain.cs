@@ -11,6 +11,8 @@ namespace c_sharp_apps_yaso_katamo.BankApp
         public static void MainEntry()
         {
             Console.WriteLine("BankApp");
+            TestAccount.Test1();
+
         }
     }
 }

@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BankApp\Account.cs" />
     <Compile Include="BankApp\BankAppMain.cs" />
+    <Compile Include="BankApp\Owner.cs" />
+    <Compile Include="BankApp\TestAccount.cs" />
     <Compile Include="DraftApp\DraftAppMain.cs" />
     <Compile Include="Game_sport\Game.cs" />
     <Compile Include="Program.cs" />
@@ -51,6 +54,9 @@
     <Compile Include="Round-Game\Round.cs" />
     <Compile Include="Season-game\Season.cs" />
     <Compile Include="shared\ProcessManager.cs" />
+    <Compile Include="SportApp\generalPlayer\basketBallPlayer.cs" />
+    <Compile Include="SportApp\generalPlayer\genral_Player.cs" />
+    <Compile Include="SportApp\generalPlayer\soccerPlayer.cs" />
     <Compile Include="SportApp\SportAppMain.cs" />
     <Compile Include="Team-sport\Team.cs" />
     <Compile Include="Test_Sport_App\TestSportApp.cs" />
