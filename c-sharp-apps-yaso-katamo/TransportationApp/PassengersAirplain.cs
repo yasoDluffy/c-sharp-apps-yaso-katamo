@@ -14,7 +14,10 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
         private int rows;
         private int columns;
 
-        public PassengersAirplain() { }
+        public PassengersAirplain()
+        {
+           this.MaxSpeed = 0; // הגדרת ברירת מחדל למהירות מקסימלית
+        }
 
         public PassengersAirplain(int line, int id, int enginesNum, int wingLength, int rows, int columns)
             : base(line, id, 0, rows * columns - 7)
@@ -62,8 +65,7 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
 
         public override string ToString()
         {
-            return $"PassengersAirplain: Line: {Line}, Id: {Id}, MaxSpeed: {MaxSpeed}, Seats: {Seats}, EnginesNum: {enginesNum}, WingLength: {wingLength}";
+            return $"PassengersAirplane: Line: {Line}, Id: {Id}, MaxSpeed: {MaxSpeed}, Seats: {Seats}, EnginesNum: {enginesNum}, WingLength: {wingLength}";
         }
-
     }
 }

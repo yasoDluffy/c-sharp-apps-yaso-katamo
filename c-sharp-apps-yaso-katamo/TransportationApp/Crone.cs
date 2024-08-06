@@ -62,6 +62,5 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
             hash = hash * 31 + columns.GetHashCode();
             return hash;
         }
-
     } 
 }

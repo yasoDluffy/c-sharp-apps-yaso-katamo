@@ -8,10 +8,12 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
 {
     public class Bus : PublicVehicle
     {
-        // תכונות
         private readonly int doors;
 
-        public Bus() { }
+        public Bus() : base()
+        {
+            MaxSpeed = 0; // הגדרת ברירת מחדל למהירות מקסימלית
+        }
 
         public Bus(int line, int id, int maxSpeed, int seats, int doors)
             : base(line, id, maxSpeed, seats)

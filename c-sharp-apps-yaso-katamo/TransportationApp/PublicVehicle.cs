@@ -8,7 +8,6 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
 {
     public class PublicVehicle
     {
-        // תכונות
         private int line;
         private int id;
         protected int maxSpeed;
@@ -17,19 +16,23 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
         private bool hasRoom;
         private int rejectedPassengers;
 
-        public PublicVehicle() { }
+        public PublicVehicle()
+        {
+            maxSpeed = 0; // הגדרת ברירת מחדל למהירות מקסימלית
+        }
 
         public PublicVehicle(int line, int id)
         {
             this.line = line;
             this.id = id;
+            this.maxSpeed = 0; // הגדרת ברירת מחדל למהירות מקסימלית
         }
 
         public PublicVehicle(int line, int id, int maxSpeed, int seats)
         {
             this.line = line;
             this.id = id;
-            MaxSpeed = maxSpeed;
+            this.maxSpeed = maxSpeed; // הגדרת המהירות המקסימלית מהפרמטרים
             this.seats = seats;
         }
 
@@ -38,10 +41,7 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
         public virtual int MaxSpeed
         {
             get => maxSpeed;
-            set
-            {
-                if (value <= 40) maxSpeed = value;
-            }
+            set => maxSpeed = value;
         }
         public int CurrentPassengers { get => currentPassengers; set => currentPassengers = value; }
         public int Seats { get => seats; set => seats = value; }

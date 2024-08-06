@@ -11,7 +11,10 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
         private Crone[] crones;
         private int cronesAmount;
 
-        public PassengersTrain() { }
+        public PassengersTrain()
+        {
+            MaxSpeed = 0; // הגדרת ברירת מחדל למהירות מקסימלית
+        }
 
         public PassengersTrain(int line, int id, int maxSpeed, Crone crone, int cronesAmount)
             : base(line, id, maxSpeed, crone.GetSeats() * cronesAmount + crone.GetExtras() * cronesAmount)

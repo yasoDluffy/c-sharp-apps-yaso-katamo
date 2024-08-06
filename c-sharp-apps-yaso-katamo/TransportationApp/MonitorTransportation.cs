@@ -16,7 +16,7 @@ namespace c_sharp_apps_yaso_katamo.TransportationApp
             // TODO:
 
             // some tests:
-            PublicVehicle p1 = new PublicVehicle(18, 8099065, 50, 80);
+            PublicVehicle p1 = new PublicVehicle(); // מהירות מקסימלית תוגדר ל-0
             Bus bus = new Bus(1, 2033355, 110, 50, 3); // int line, int id, int maxSpeed, int seats, int doors
             PassengersAirplain passengersAirplain1 = new PassengersAirplain(605, 987653, 4, 10, 60, 6); // int line, int id, int enginesNum, int wingLength, int rows, int columns
 
